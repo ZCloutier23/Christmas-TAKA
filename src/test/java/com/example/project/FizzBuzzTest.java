@@ -20,7 +20,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 class FizzBuzzTest {
 
 	@Test
-	@Test
 	void returnsFizzBuzzForFifteen() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 		String result = fizzBuzz.convert(15);
