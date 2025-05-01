@@ -20,12 +20,13 @@ import org.junit.jupiter.params.provider.CsvSource;
 class FizzBuzzTest {
 
 	@Test
-void returnsBuzzForFive() {
-    FizzBuzz fizzBuzz = new FizzBuzz();
-    String result = fizzBuzz.convert(5);
-    assertEquals("Buzz", result);
-}
-}
+	@Test
+	void returnsFizzBuzzForFifteen() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+		String result = fizzBuzz.convert(15);
+		assertEquals("FizzBuzz", result);
+	}
+}	
 
 
 	
