@@ -12,8 +12,12 @@
  package com.example.project;
 
  public class FizzBuzz {
-	 public String convert(int number) {
-		 return "1"; 
-	 }
- }
+	public String convert(int number) {
+		if (number == 3) {
+			return "Fizz";
+		}
+		return String.valueOf(number);
+	}
+}
+	
  
