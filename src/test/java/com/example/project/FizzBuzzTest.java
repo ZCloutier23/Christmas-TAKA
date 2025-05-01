@@ -14,19 +14,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
+//import org.junit.jupiter.params.ParameterizedTest;
+//import org.junit.jupiter.params.provider.CsvSource;
 
 class FizzBuzzTest {
 
-	//@Test
-//void throwsExceptionForZeroOrNegative() {
-  //  FizzBuzz fizzBuzz = new FizzBuzz();
-    //assertThrows(IllegalArgumentException.class, () -> fizzBuzz.convert(0));
-    //assertThrows(IllegalArgumentException.class, () -> fizzBuzz.convert(-5));
-//}
-
-//}	
+@Test
+void returnsFizzBuzzForFifteen() {
+    FizzBuzz fizzBuzz = new FizzBuzz();
+    String result = fizzBuzz.convert(15);
+    assertEquals("FizzBuzz", result);
+}
+}
 
 
 	
