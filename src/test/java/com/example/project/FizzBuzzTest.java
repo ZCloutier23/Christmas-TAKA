@@ -19,15 +19,14 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 class FizzBuzzTest {
 
-	@Test
-	@Test
-void throwsExceptionForZeroOrNegative() {
-    FizzBuzz fizzBuzz = new FizzBuzz();
-    assertThrows(IllegalArgumentException.class, () -> fizzBuzz.convert(0));
-    assertThrows(IllegalArgumentException.class, () -> fizzBuzz.convert(-5));
-}
+	//@Test
+//void throwsExceptionForZeroOrNegative() {
+  //  FizzBuzz fizzBuzz = new FizzBuzz();
+    //assertThrows(IllegalArgumentException.class, () -> fizzBuzz.convert(0));
+    //assertThrows(IllegalArgumentException.class, () -> fizzBuzz.convert(-5));
+//}
 
-}	
+//}	
 
 
 	

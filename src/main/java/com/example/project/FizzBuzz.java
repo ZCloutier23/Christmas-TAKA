@@ -13,18 +13,21 @@
 
  public class FizzBuzz {
 	public String convert(int number) {
-		if (number % 3 == 0 && number % 5 == 0) {
-			return "FizzBuzz";
+		if (number < 1) {
+			throw new IllegalArgumentException("Number must be >= 1");
 		}
+	
+		StringBuilder result = new StringBuilder();
 		if (number % 3 == 0) {
-			return "Fizz";
+			result.append("Fizz");
 		}
 		if (number % 5 == 0) {
-			return "Buzz";
+			result.append("Buzz");
 		}
-		return String.valueOf(number);
+	
+		return result.length() > 0 ? result.toString() : String.valueOf(number);
 	}
-
+	
  }
 	
  
